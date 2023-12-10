@@ -12,5 +12,5 @@ export default defineConfig({
     }),
   ],
   site: "https://malexanderlvz.github.io",
-  base: "/me",
+  base: "/",
 });
