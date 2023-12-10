@@ -1,0 +1,135 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import "@/styles/global.css";
+import { Image } from "astro:assets";
+import malexanderlvz from "/public/malexanderlvz-marcos-santa-cruz-web-engineer-full-min.png";
+---
+
+<script is:inline>
+  const getThemePreference = () => {
+    if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
+      return localStorage.getItem("theme");
+    }
+    return window.matchMedia("(prefers-color-scheme: dark)").matches
+      ? "dark"
+      : "light";
+  };
+  const isDark = getThemePreference() === "dark";
+  document.documentElement.classList[isDark ? "add" : "remove"]("dark");
+
+  if (typeof localStorage !== "undefined") {
+    const observer = new MutationObserver(() => {
+      const isDark = document.documentElement.classList.contains("dark");
+      localStorage.setItem("theme", isDark ? "dark" : "light");
+    });
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["class"],
+    });
+  }
+</script>
+<Layout title="malexanderlvz">
+  <main class="">
+    <section class="hero pt-12">
+      <div class="hidden-container">
+        <div class="media-container">
+          <div class="hero-swiper">
+            <div class="hero-media-image-container">
+              <a href="https://github.com/malexanderlvz" target="_blank">
+                <span class="sr-only"
+                  >Malexanderlvz, a proficient Software Engineer located in
+                  Santa Cruz, California; with his hands on his side, posing
+                  infront of a parlor stove under an arc of brinks.</span
+                >
+                <div class="image-wrapper">
+                  <Image
+                    src={malexanderlvz}
+                    alt="Malexanderlvz, a proficient Software Engineer located in Santa Cruz, California; with his hands on his side, posing infront of a parlor stove under an arc of brinks."
+                  />
+                </div>
+              </a>
+              <div class="hero-"></div>
+            </div>
+            <div class="sticky-container"></div>
+          </div>
+          <div class="sticky-container">
+            <div class="title-cta-container">
+              <dev class="above-hint-scollbar">
+                <h2 class="uppercase text-foreground">About Me</h2>
+                <a
+                  href="#my-work"
+                  class="uppercase bg-background text-foreground"
+                >
+                  My Work
+                </a>
+              </dev>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <style>
+    main {
+      margin: auto;
+      padding: 1rem;
+      width: 800px;
+      max-width: calc(100% - 2rem);
+      color: white;
+      font-size: 20px;
+      line-height: 1.6;
+    }
+    .astro-a {
+      position: absolute;
+      top: -32px;
+      left: 50%;
+      transform: translatex(-50%);
+      width: 220px;
+      height: auto;
+      z-index: -1;
+    }
+    h1 {
+      font-size: 4rem;
+      font-weight: 700;
+      line-height: 1;
+      text-align: center;
+      margin-bottom: 1em;
+    }
+    .text-gradient {
+      background-image: var(--accent-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 400%;
+      background-position: 0%;
+    }
+    .instructions {
+      margin-bottom: 2rem;
+      border: 1px solid rgba(var(--accent-light), 25%);
+      background: linear-gradient(
+        rgba(var(--accent-dark), 66%),
+        rgba(var(--accent-dark), 33%)
+      );
+      padding: 1.5rem;
+      border-radius: 8px;
+    }
+    .instructions code {
+      font-size: 0.8em;
+      font-weight: bold;
+      background: rgba(var(--accent-light), 12%);
+      color: rgb(var(--accent-light));
+      border-radius: 4px;
+      padding: 0.3em 0.4em;
+    }
+    .instructions strong {
+      color: rgb(var(--accent-light));
+    }
+    .link-card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+      gap: 2rem;
+      padding: 0;
+    }
+  </style>
+</Layout>
