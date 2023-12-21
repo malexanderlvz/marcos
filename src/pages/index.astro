@@ -30,8 +30,24 @@ import malexanderlvz from "/public/malexanderlvz-marcos-santa-cruz-web-engineer-
   }
 </script>
     <Layout title="malexanderlvz">
-    <main class="">
-        <section class="name-title"><h2 class="text-black text-center">Senior Software Engineer</h2></section>
+    <main class="text-foreground">
+        <section class="name-title flex justify-center"><div class="text-center text-background mb-3.5 bg-primary uppercase font-bold py-1 px-2 shadow-sm border inline-flex text-sm">Software Engineer</div></section>
+        <section class="contact-info text-foreground">
+            <dl>
+                <dt class="hdlist1 text-xl mb-1">CONTACT INFO</dt>
+                <dd>
+                    <p class="">
+                    <a href="mailto:marcos@llavez.com">marcos@llavez.com</a>
+                    <br>
+                    <a href="https://llavez.com/marcos">https://llavez.com/marcos</a>
+                    <br>
+                    <a href="https://www.linkedin.com/in/malexanderlvz">https://www.linkedin.com/in/malexanderlvz</a>
+                    <br>
+                    <a href="https://github.com/malexanderlvz">https://github.com/malexanderlvz</a>
+                    </p>
+                </dd>
+            </dl>
+        </section>
         <section class="hero pt-12">
             <div class="hidden-container">
                 <div class="media-container">
@@ -70,12 +86,18 @@ import malexanderlvz from "/public/malexanderlvz-marcos-santa-cruz-web-engineer-
                 </div>
             </div>
         </section>
+        <section class="text-foreground">
+            <h3 id="overview">OVERVIEW</h3>
+            <div class="paragraph">
+                As a versatile full-stack developer adept in both front-end and back-end development, I am actively seeking a dynamic remote position that offers flexibility and the opportunity to tackle challenging problems within a cohesive team.
+            </div>
+        </section>
     </main>
 
 <style>
     main {
         margin: auto;
-        padding: 1rem;
+        padding: 0px 1rem 1rem 1rem;
         width: 800px;
         max-width: calc(100% - 2rem);
         color: white;
@@ -99,7 +121,7 @@ import malexanderlvz from "/public/malexanderlvz-marcos-santa-cruz-web-engineer-
         margin-bottom: 1em;
     }
     .text-gradient {
-        background-image: var(--accent-gradient);
+        background-image: hsl(var(--accent-gradient));
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-size: 400%;

@@ -102,6 +102,9 @@
   will-change: min-height;
   min-height: calc(16.7842vw + 72px);
 }
+.header-action-wrapper li {
+    display: flex;
+}
 @layer base {
   * {
     @apply border-border;
