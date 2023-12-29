@@ -100,7 +100,7 @@
   color: var(--g-color-foreground);
   transition: min-height 0.8s cubic-bezier(0.5, 0, 0, 1) 0s;
   will-change: min-height;
-  min-height: calc(16.7842vw + 72px);
+  min-height: calc(14.7842vw + 80px);
 }
 .header-action-wrapper li {
     display: flex;
