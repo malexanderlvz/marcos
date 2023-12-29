@@ -4,6 +4,7 @@ import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 import { Image } from "astro:assets";
 import malexanderlvz from "/public/malexanderlvz-marcos-santa-cruz-web-engineer-full-min.png";
+import {GlobeIcon, LinkedinIcon, GithubIcon} from 'astro-feather'
 ---
 
 <script is:inline>
@@ -31,67 +32,73 @@ import malexanderlvz from "/public/malexanderlvz-marcos-santa-cruz-web-engineer-
 </script>
     <Layout title="malexanderlvz">
     <main class="text-foreground">
-        <section class="name-title flex justify-center"><div class="text-center text-background mb-3.5 bg-primary uppercase font-bold py-1 px-2 shadow-sm border inline-flex text-sm">Software Engineer</div></section>
-        <section class="contact-info text-foreground">
-            <dl>
-                <dt class="hdlist1 text-xl mb-1">CONTACT INFO</dt>
-                <dd>
-                    <p class="">
-                    <a href="mailto:marcos@llavez.com">marcos@llavez.com</a>
-                    <br>
-                    <a href="https://llavez.com/marcos">https://llavez.com/marcos</a>
-                    <br>
-                    <a href="https://www.linkedin.com/in/malexanderlvz">https://www.linkedin.com/in/malexanderlvz</a>
-                    <br>
-                    <a href="https://github.com/malexanderlvz">https://github.com/malexanderlvz</a>
-                    </p>
-                </dd>
-            </dl>
+        <section class="name-title flex justify-center"><div class="text-center text-background mb-7 bg-primary uppercase font-bold py-1 px-2 shadow-sm border inline-flex text-sm">Software Engineer</div></section>
+        <section class="contact-info text-foreground pb-2">
+            <div class="flex justify-center gap-3">
+                <a href="/" class="flex flex-col py-2 px-3 bg-foreground rounded-xl items-center min-w-[74px]">
+                    <svg class="h-6 w-6 text-background"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <circle cx="12" cy="12" r="10" />  <line x1="2" y1="12" x2="22" y2="12" />  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" /></svg>
+                    <div class="text-sm pt-1.5 text-background">website</div>
+                </a>
+                <a href="mailto:marcos@llavez.com" class="flex flex-col py-2 px-3 bg-foreground rounded-xl items-center min-w-[74px]">
+                    <svg class="h-6 w-6 text-background"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />  <polyline points="22,6 12,13 2,6" /></svg>
+                    <div class="text-sm pt-1.5 text-background">mail</div>
+                </a>
+                <a href="https://linkedin.com/in/malexanderlvz" class="flex flex-col py-2 px-3 bg-foreground rounded-xl items-center min-w-[74px]">
+                    <svg class="h-6 w-6 text-background"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />  <rect x="2" y="9" width="4" height="12" />  <circle cx="4" cy="4" r="2" /></svg>
+                    <div class="text-sm pt-1.5 text-background">linkedin</div>
+                </a>
+                <a href="https://github.com/malexanderlvz" class="flex flex-col py-2 px-3 bg-foreground rounded-xl items-center min-w-[74px]">
+                    <svg class="h-6 w-6 text-background"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" /></svg>
+                    <div class="text-sm pt-1.5 text-background">github</div>
+                </a>
+            </div>
         </section>
-        <section class="hero pt-12">
-            <div class="hidden-container">
-                <div class="media-container">
-                    <div class="hero-swiper">
-                        <div class="hero-media-image-container">
-                            <a href="https://github.com/malexanderlvz" target="_blank">
-                                <span class="sr-only"
-                                    >Malexanderlvz, a proficient Software Engineer located in
-                                    Santa Cruz, California; with his hands on his side, posing
-                                    infront of a parlor stove under an arc of brinks.</span
-                                >
-                            </a>
-                                    <div class="image-wrapper max-w-[800] w-[calc(100vw - 2rem)]">
-                                        <Image
-                                        src={malexanderlvz}
-                                        alt="Malexanderlvz, a proficient Software Engineer located in Santa Cruz, California; with his hands on his side, posing infront of a parlor stove under an arc of brinks."
-                                        />
-                                    </div>
-                                    <div class="hero-"></div>
+        <div class="info-wrapper flex flex-col gap-5">
+            <div class="text-foreground">
+                <h3 id="overview" class="mt-4 mb-2 leading-tight font-semibold">OVERVIEW</h3>
+                <div class="paragraph text-lg">
+                    As a versatile full-stack developer adept in both front-end and back-end development, I am actively seeking a dynamic remote position that offers flexibility and the opportunity to tackle challenging problems within a cohesive team.
+                </div>
+            </div>
+            <div class="hero pt-2">
+                <div class="hidden-container">
+                    <div class="media-container">
+                        <div class="hero-swiper">
+                            <div class="hero-media-image-container">
+                                <a href="https://github.com/malexanderlvz" target="_blank">
+                                    <span class="sr-only"
+                                        >Malexanderlvz, a proficient Software Engineer located in
+                                        Santa Cruz, California; with his hands on his side, posing
+                                        infront of a parlor stove under an arc of brinks.</span
+                                    >
+                                </a>
+                                        <div class="image-wrapper max-w-[800] w-[calc(100vw - 2rem)]">
+                                            <Image
+                                            src={malexanderlvz}
+                                            alt="Malexanderlvz, a proficient Software Engineer located in Santa Cruz, California; with his hands on his side, posing infront of a parlor stove under an arc of brinks."
+                                            />
+                                        </div>
+                                        <div class="hero-"></div>
+                            </div>
+                            <div class="sticky-container"></div>
                         </div>
-                        <div class="sticky-container"></div>
-                    </div>
-                    <div class="sticky-container">
-                        <div class="title-cta-container">
-                            <dev class="above-hint-scollbar">
-                            <h2 class="uppercase text-foreground">About Me</h2>
-                            <a
-                                href="#my-work"
-                                class="uppercase bg-background text-foreground"
-                                >
-                                My Work
-                            </a>
-                            </dev>
+                        <div class="sticky-container">
+                            <div class="title-cta-container">
+                                <dev class="above-hint-scollbar">
+                                <h3 id="overview" class="mt-4 mb-2 leading-tight font-semibold">Expereince</h3>
+                                <a
+                                    href="#my-work"
+                                    class="uppercase bg-background text-foreground"
+                                    >
+                                    View My Work 
+                                </a>
+                                </dev>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="text-foreground">
-            <h3 id="overview">OVERVIEW</h3>
-            <div class="paragraph">
-                As a versatile full-stack developer adept in both front-end and back-end development, I am actively seeking a dynamic remote position that offers flexibility and the opportunity to tackle challenging problems within a cohesive team.
-            </div>
-        </section>
+        </div>
     </main>
 
 <style>
