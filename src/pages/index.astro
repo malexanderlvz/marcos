@@ -31,7 +31,7 @@ import {GlobeIcon, LinkedinIcon, GithubIcon} from 'astro-feather'
   }
 </script>
     <Layout title="malexanderlvz">
-    <main class="text-foreground">
+    <main class="text-foreground pt-2 m-auto p-4 w-[800px] max-w-[calc(100%-2rem)] text-xl leading-8">
         <section class="name-title flex justify-center"><div class="text-center text-background mb-7 bg-primary uppercase font-bold py-1 px-2 shadow-sm border inline-flex text-sm">Software Engineer</div></section>
         <section class="contact-info text-foreground pb-2">
             <div class="flex justify-center gap-3">
@@ -60,57 +60,57 @@ import {GlobeIcon, LinkedinIcon, GithubIcon} from 'astro-feather'
                     As a versatile full-stack developer adept in both front-end and back-end development, I am actively seeking a dynamic remote position that offers flexibility and the opportunity to tackle challenging problems within a cohesive team.
                 </div>
             </div>
-            <div class="hero pt-2">
+            <div class="hero pt-1.5">
                 <div class="hidden-container">
                     <div class="media-container">
                         <div class="hero-swiper">
-                            <div class="hero-media-image-container">
-                                <a href="https://github.com/malexanderlvz" target="_blank">
-                                    <span class="sr-only"
-                                        >Malexanderlvz, a proficient Software Engineer located in
+                            <div class="hero-media-image-container relative">
+                                <a href="https://github.com/malexanderlvz" target="_blank" class="link-wrapper flex absolute w-full h-full z-[1]">
+                                    <span class="sr-only">Malexanderlvz, a proficient Software Engineer located in
                                         Santa Cruz, California; with his hands on his side, posing
-                                        infront of a parlor stove under an arc of brinks.</span
-                                    >
+                                        infront of a parlor stove under an arc of brinks.</span>
                                 </a>
-                                        <div class="image-wrapper max-w-[800] w-[calc(100vw - 2rem)]">
-                                            <Image
-                                            src={malexanderlvz}
-                                            alt="Malexanderlvz, a proficient Software Engineer located in Santa Cruz, California; with his hands on his side, posing infront of a parlor stove under an arc of brinks."
-                                            />
-                                        </div>
-                                        <div class="hero-"></div>
+                                <div class="image-wrapper max-w-[800] w-[calc(100vw - 2rem)]">
+                                    <Image
+                                    src={malexanderlvz}
+                                    alt="Malexanderlvz, a proficient Software Engineer located in Santa Cruz, California; with his hands on his side, posing infront of a parlor stove under an arc of brinks."
+                                    />
+                                </div>
                             </div>
-                            <div class="sticky-container"></div>
                         </div>
                         <div class="sticky-container">
-                            <div class="title-cta-container">
-                                <dev class="above-hint-scollbar">
-                                <h3 id="overview" class="mt-4 mb-2 leading-tight font-semibold">Expereince</h3>
+                            <div class="title-cta-container flex flex-col items-center text-background">
+                                <h3 id="overview" class="text-white mt-4 mb-2 leading-tight font-semibold">Expereince</h3>
                                 <a
                                     href="#my-work"
-                                    class="uppercase bg-background text-foreground"
+                                    class="uppercase bg-background text-foreground py-4 px-6 text-xs"
                                     >
                                     View My Work 
                                 </a>
-                                </dev>
                             </div>
+                        </div>
+                    </div>
+                    <div class="sticky-container">
+                        <div class="title-cta-container flex flex-col items-center text-foreground">
+                            <h3 id="overview" class="mt-4 mb-2 leading-tight font-semibold">Expereince</h3>
+                            <a
+                                href="#my-work"
+                                class="uppercase bg-foreground text-background py-4 px-6 text-xs"
+                                >
+                                View My Work 
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <section class="work-experience flex flex-col">
+
+        </section>
+
     </main>
 
 <style>
-    main {
-        margin: auto;
-        padding: 0px 1rem 1rem 1rem;
-        width: 800px;
-        max-width: calc(100% - 2rem);
-        color: white;
-        font-size: 20px;
-        line-height: 1.6;
-    }
     .astro-a {
         position: absolute;
         top: -32px;
