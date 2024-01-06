@@ -4,11 +4,11 @@ import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 import { Image } from "astro:assets";
 import malexanderlvz from "/public/malexanderlvz-marcos-santa-cruz-web-engineer-full-min.png";
-import {GlobeIcon, LinkedinIcon, GithubIcon} from 'astro-feather'
+import { GlobeIcon, LinkedinIcon, GithubIcon } from "astro-feather";
 ---
 
 <script is:inline>
-    const getThemePreference = () => {
+  const getThemePreference = () => {
     if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
       return localStorage.getItem("theme");
     }
@@ -30,144 +30,334 @@ import {GlobeIcon, LinkedinIcon, GithubIcon} from 'astro-feather'
     });
   }
 </script>
-    <Layout title="malexanderlvz">
-    <main class="text-foreground pt-2 m-auto p-4 w-[800px] max-w-[calc(100%-2rem)] text-xl leading-8">
-        <section class="name-title flex justify-center"><div class="text-center text-background mb-7 bg-primary uppercase font-bold py-1 px-2 shadow-sm border inline-flex text-sm">Software Engineer</div></section>
-        <section class="contact-info text-foreground pb-2">
-            <div class="flex justify-center gap-3">
-                <a href="/" class="flex flex-col py-2 px-3 bg-foreground rounded-xl items-center min-w-[74px]">
-                    <svg class="h-6 w-6 text-background"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <circle cx="12" cy="12" r="10" />  <line x1="2" y1="12" x2="22" y2="12" />  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" /></svg>
-                    <div class="text-sm pt-1.5 text-background">website</div>
-                </a>
-                <a href="mailto:marcos@llavez.com" class="flex flex-col py-2 px-3 bg-foreground rounded-xl items-center min-w-[74px]">
-                    <svg class="h-6 w-6 text-background"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />  <polyline points="22,6 12,13 2,6" /></svg>
-                    <div class="text-sm pt-1.5 text-background">mail</div>
-                </a>
-                <a href="https://linkedin.com/in/malexanderlvz" class="flex flex-col py-2 px-3 bg-foreground rounded-xl items-center min-w-[74px]">
-                    <svg class="h-6 w-6 text-background"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />  <rect x="2" y="9" width="4" height="12" />  <circle cx="4" cy="4" r="2" /></svg>
-                    <div class="text-sm pt-1.5 text-background">linkedin</div>
-                </a>
-                <a href="https://github.com/malexanderlvz" class="flex flex-col py-2 px-3 bg-foreground rounded-xl items-center min-w-[74px]">
-                    <svg class="h-6 w-6 text-background"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" /></svg>
-                    <div class="text-sm pt-1.5 text-background">github</div>
-                </a>
-            </div>
-        </section>
-        <div class="info-wrapper flex flex-col gap-5">
-            <div class="text-foreground">
-                <h3 id="overview" class="mt-4 mb-2 leading-tight font-semibold">OVERVIEW</h3>
-                <div class="paragraph text-lg">
-                    I am a full-stack developer adept in both front-end and back-end development, I am actively seeking a dynamic remote position that offers flexibility and the opportunity to tackle challenging problems within a cohesive team.
-                </div>
-            </div>
-            <div class="hero pt-1.5">
-                <div class="hidden-container">
-                    <div class="media-container">
-                        <div class="hero-swiper">
-                            <div class="hero-media-image-container relative">
-                                <a href="https://github.com/malexanderlvz" target="_blank" class="link-wrapper flex absolute w-full h-full z-[1]">
-                                    <span class="sr-only">Malexanderlvz, a proficient Software Engineer located in
-                                        Santa Cruz, California; with his hands on his side, posing
-                                        infront of a parlor stove under an arc of brinks.</span>
-                                </a>
-                                <div class="image-wrapper max-w-[800] w-[calc(100vw - 2rem)]">
-                                    <Image
-                                    src={malexanderlvz}
-                                    alt="Malexanderlvz, a proficient Software Engineer located in Santa Cruz, California; with his hands on his side, posing infront of a parlor stove under an arc of brinks."
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="sticky-container">
-                            <div class="title-cta-container flex flex-col items-center text-background">
-                                <h3 id="overview" class="text-white mt-4 mb-2 leading-tight font-semibold">Expereince</h3>
-                                <a
-                                    href="#my-work"
-                                    class="uppercase bg-background text-foreground py-4 px-6 text-xs"
-                                    >
-                                    View My Work 
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="sticky-container">
-                        <div class="title-cta-container flex flex-col items-center text-foreground">
-                            <h3 id="overview" class="mt-4 mb-2 leading-tight font-semibold">Expereince</h3>
-                            <a
-                                href="#my-work"
-                                class="uppercase bg-foreground text-background py-4 px-6 text-xs"
-                                >
-                                View My Work 
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<Layout title="malexanderlvz">
+  <main
+    class="text-foreground pt-2 m-auto p-4 w-[800px] max-w-[calc(100%-2rem)] text-lg leading-8"
+  >
+    <section class="name-title flex justify-center">
+      <div
+        class="text-center text-background mb-7 bg-primary uppercase font-bold py-1 px-2 shadow-sm border inline-flex text-sm"
+      >
+        Software Engineer
+      </div>
+    </section>
+    <section class="contact-info text-foreground pb-2">
+      <div class="flex justify-center gap-3">
+        <a
+          href="/"
+          class="flex flex-col py-2 px-3 bg-foreground rounded-xl items-center min-w-[74px]"
+        >
+          <svg
+            class="h-6 w-6 text-background"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="2" y1="12" x2="22" y2="12"></line>
+            <path
+              d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+            ></path></svg
+          >
+          <div class="text-sm pt-1.5 text-background">website</div>
+        </a>
+        <a
+          href="mailto:marcos@llavez.com"
+          class="flex flex-col py-2 px-3 bg-foreground rounded-xl items-center min-w-[74px]"
+        >
+          <svg
+            class="h-6 w-6 text-background"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path
+              d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+            ></path>
+            <polyline points="22,6 12,13 2,6"></polyline></svg
+          >
+          <div class="text-sm pt-1.5 text-background">mail</div>
+        </a>
+        <a
+          href="https://linkedin.com/in/malexanderlvz"
+          class="flex flex-col py-2 px-3 bg-foreground rounded-xl items-center min-w-[74px]"
+        >
+          <svg
+            class="h-6 w-6 text-background"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path
+              d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+            ></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle></svg
+          >
+          <div class="text-sm pt-1.5 text-background">linkedin</div>
+        </a>
+        <a
+          href="https://github.com/malexanderlvz"
+          class="flex flex-col py-2 px-3 bg-foreground rounded-xl items-center min-w-[74px]"
+        >
+          <svg
+            class="h-6 w-6 text-background"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path
+              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+            ></path></svg
+          >
+          <div class="text-sm pt-1.5 text-background">github</div>
+        </a>
+      </div>
+    </section>
+    <div class="info-wrapper flex flex-col gap-5">
+      <div class="text-foreground">
+        <h3 id="overview" class="mt-4 mb-2 leading-tight font-semibold">
+          OVERVIEW
+        </h3>
+        <div class="paragraph text-lg">
+          I am a full-stack developer adept in both front-end and back-end
+          development, I am actively seeking a dynamic remote position that
+          offers flexibility and the opportunity to tackle challenging problems
+          within a cohesive team.
         </div>
-        <section class="work-experience flex flex-col">
-            <div class="experience flex">
-                <div class="year">2023 - Present</div>
-                <div class="xp-position flex flex-col w-full self-center">
-                    <div class="flex flex-wrap h-full items-center">
-                        Co-Founder / Software Engineer
-                    </div>
-                    <a href="https://www.bienmiches.com" class="xp-company">https://bienmiches.com</a>
-                    <div class="
+      </div>
+      <div class="hero pt-1.5">
+        <div class="hidden-container">
+          <div class="media-container">
+            <div class="hero-swiper">
+              <div class="hero-media-image-container relative">
+                <a
+                  href="https://github.com/malexanderlvz"
+                  target="_blank"
+                  class="link-wrapper flex absolute w-full h-full z-[1]"
+                >
+                  <span class="sr-only"
+                    >Malexanderlvz, a proficient Software Engineer located in
+                    Santa Cruz, California; with his hands on his side, posing
+                    infront of a parlor stove under an arc of brinks.</span
+                  >
+                </a>
+                <div class="image-wrapper max-w-[800] w-[calc(100vw - 2rem)]">
+                  <Image
+                    src={malexanderlvz}
+                    alt="Malexanderlvz, a proficient Software Engineer located in Santa Cruz, California; with his hands on his side, posing infront of a parlor stove under an arc of brinks."
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="sticky-container">
+              <div
+                class="title-cta-container flex flex-col items-center text-background"
+              >
+                <h3
+                  id="overview"
+                  class="text-white mt-4 mb-2 leading-tight font-semibold"
+                >
+                  Expereince
+                </h3>
+                <a
+                  href="#my-work"
+                  class="uppercase bg-background text-foreground py-4 px-6 text-xs"
+                >
+                  View My Work
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="sticky-container">
+            <div
+              class="title-cta-container flex flex-col items-center text-foreground"
+            >
+              <h3 id="overview" class="mt-4 mb-2 leading-tight font-semibold">
+                Expereince
+              </h3>
+            <a
+                href="#my-work"
+                class="uppercase bg-foreground text-background py-4 px-6 text-xs"
+              >
+                View My Work
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="work-experience flex flex-col gap-5">
+      <div class="experience flex">
+        <div class="year font-bold">2023 - Present</div>
+        <div class="xp-position flex flex-col w-full self-center">
+          <div class="flex flex-wrap h-full items-center font-bold">
+            Co-Founder / Software Engineer - Bien Miches 
+          </div>
+          <a
+            href="https://www.bienmiches.com"
+            class="xp-company hover-underline-animation"
+            >https://bienmiches.com</a
+          >
+          <div class="xp-description">
+            Co-founded Bien Miches, an e-commerce platform offering premium
+            michelada mixes, with ingredients from Mexico and an authentic
+            recipe procured from a distinguished restaurant in Jalisco.
+          </div>
+        </div>
+      </div>
+      <div class="experience flex">
+        <div class="year font-bold">2015 - Present</div>
+        <div class="xp-position flex flex-col w-full self-center">
+          <div class="flex flex-wrap h-full items-center font-bold">
+              Principal - llavez
+          </div>
+          <a
+              href="https://www.llavez.com"
+            class="xp-company hover-underline-animation"
+            >https://www.llavez.com
+          </a>
+          <div class="xp-description">
+              Llavez provides software consulting services and supports my open source work.
+          </div>
+        </div>
+      </div>
+      <div class="experience flex">
+          <div class="year font-bold">2022 - 2023</div>
+          <div class="xp-position flex flex-col w-full self-center">
+              <div class="flex flex-wrap h-full items-center font-bold">
+                  Director of Professional Services - FreeAgent CRM 
+              </div>
+              <a
+                  href="https://freeagentcrm.com"
+                  class="xp-company hover-underline-animation"
+                  >https://freeagentcrm.com</a>
+              <div class="xp-description">
+                  At FreeAgent CRM, I progressed through two promotions, initially as a Senior Technical Support Specialist and later ascending to the role of Director of Professional Services.
+              </div>
+          </div>
+      </div>
+      <div class="experience flex">
+          <div class="year font-bold">2020 - 2021</div>
+          <div class="xp-position flex flex-col w-full self-center">
+              <div class="flex flex-wrap h-full items-center font-bold">
+                  Co-Founder - Learkn
+              </div>
+              <a
+                  href="https://twitter.com/learkn_"
+                  class="xp-company hover-underline-animation"
+                  >https://twitter.com/learkn_</a>
+              <div class="xp-description">
+                  I embarked on an exhilarating journey to revolutionize the education technology landscape. Together with my co-founders, I played a pivotal role in shaping the company's vision and strategy. My responsibilities ranged from defining our vision to architecting and overseeing the development of our innovative e-learning platform.
+              </div>
+          </div>
+      </div>
+      <div class="experience flex">
+          <div class="year font-bold">2019 - 2020</div>
+          <div class="xp-position flex flex-col w-full self-center">
+              <div class="flex flex-wrap h-full items-center font-bold">
+                  Software QA Lead / Business Implementation - Driscoll's
+              </div>
+              <a
+                  href="https://www.driscolls.com"
+                  class="xp-company hover-underline-animation"
+                  >https://www.driscolls.com</a>
+              <div class="xp-description">
+                  In a corporate setting at Driscoll's, I assumed a pivotal role as the principal Quality Assurance (QA) and Business Implementation lead for two significant international projects, overseeing their successful launches in the United States and Mexico.
+              </div>
+          </div>
+      </div>
+    </section>
+  </main>
 
-        </section>
-
-    </main>
-
-<style>
+  <style>
     .astro-a {
-        position: absolute;
-        top: -32px;
-        left: 50%;
-        transform: translatex(-50%);
-        width: 220px;
-        height: auto;
-        z-index: -1;
+      position: absolute;
+      top: -32px;
+      left: 50%;
+      transform: translatex(-50%);
+      width: 220px;
+      height: auto;
+      z-index: -1;
     }
     h1 {
-        font-size: 4rem;
-        font-weight: 700;
-        line-height: 1;
-        text-align: center;
-        margin-bottom: 1em;
+      font-size: 4rem;
+      font-weight: 700;
+      line-height: 1;
+      text-align: center;
+      margin-bottom: 1em;
     }
     .text-gradient {
-        background-image: hsl(var(--accent-gradient));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-size: 400%;
-        background-position: 0%;
+      background-image: hsl(var(--accent-gradient));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 400%;
+      background-position: 0%;
     }
     .instructions {
-        margin-bottom: 2rem;
-        border: 1px solid rgba(var(--accent-light), 25%);
-        background: linear-gradient(
-            rgba(var(--accent-dark), 66%),
-            rgba(var(--accent-dark), 33%)
-            );
-            padding: 1.5rem;
-            border-radius: 8px;
+      margin-bottom: 2rem;
+      border: 1px solid rgba(var(--accent-light), 25%);
+      background: linear-gradient(
+        rgba(var(--accent-dark), 66%),
+        rgba(var(--accent-dark), 33%)
+      );
+      padding: 1.5rem;
+      border-radius: 8px;
     }
     .instructions code {
-        font-size: 0.8em;
-        font-weight: bold;
-        background: rgba(var(--accent-light), 12%);
-        color: rgb(var(--accent-light));
-        border-radius: 4px;
-        padding: 0.3em 0.4em;
+      font-size: 0.8em;
+      font-weight: bold;
+      background: rgba(var(--accent-light), 12%);
+      color: rgb(var(--accent-light));
+      border-radius: 4px;
+      padding: 0.3em 0.4em;
     }
     .instructions strong {
-        color: rgb(var(--accent-light));
+      color: rgb(var(--accent-light));
     }
     .link-card-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-        gap: 2rem;
-        padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+      gap: 2rem;
+      padding: 0;
     }
-</style>
-    </Layout>
+    .hover-underline-animation {
+      display: inline-block;
+      position: relative;
+      width: fit-content;
+    }
+
+    .hover-underline-animation::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      transform: scaleX(1);
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: hsl(var(--foreground));
+      transform-origin: bottom left;
+      transition: transform 0.25s ease-out;
+    }
+
+    .hover-underline-animation:hover::after {
+      transform: scaleX(0);
+      transform-origin: bottom right;
+    }
+    .year{
+        width: 14%;
+    }
+  </style>
+</Layout>
