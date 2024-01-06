@@ -11,6 +11,5 @@ export default defineConfig({
       applyBaseStyles: false,
     }),
   ],
-  site: "https://malexanderlvz.github.io",
-    base: ".",
+  site: "https://llavez.com",
 });
