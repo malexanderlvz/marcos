@@ -54,8 +54,8 @@ dependencies:
     specifier: ^0.307.0
     version: 0.307.0(astro@4.1.1)
   lucide-react:
-    specifier: ^0.299.0
-    version: 0.299.0(react@18.2.0)
+    specifier: ^0.307.0
+    version: 0.307.0(react@18.2.0)
   nanostores:
     specifier: ^0.9.5
     version: 0.9.5
@@ -6819,8 +6819,8 @@ packages:
       astro: 4.1.1(@types/node@20.10.6)(typescript@5.3.3)
     dev: false
 
-  /lucide-react@0.299.0(react@18.2.0):
-    resolution: {integrity: sha512-59MiDzDzFI/efHhb4n0vGdXelMNwou7JlAFvVS4boA1G/7aYU7garPciYo73CODzkhrhz0JOgdtSTPSe5dMrlQ==}
+  /lucide-react@0.307.0(react@18.2.0):
+    resolution: {integrity: sha512-+vZ+vUiWPZTMnLHURg4aoIaz6NHOWXVVcVd8iLROu1k4LbyjcnHIKmbjXHCmulz7XAYLWRVXzhJJgIr+Aq3vOg==}
     peerDependencies:
       react: ^16.5.1 || ^17.0.0 || ^18.0.0
     dependencies:
