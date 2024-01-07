@@ -11,7 +11,7 @@ export default defineConfig({
             applyBaseStyles: false,
         }),
     ],
-    site: "https://llavez.com",
+    site: "https://www.llavez.com",
     image: {
         service: passthroughImageService(),
     },
