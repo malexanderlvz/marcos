@@ -51,8 +51,8 @@ dependencies:
     specifier: ^10.17.9
     version: 10.17.9(react-dom@18.2.0)(react@18.2.0)
   lucide-astro:
-    specifier: ^0.299.0
-    version: 0.299.0(astro@4.1.1)
+    specifier: ^0.307.0
+    version: 0.307.0(astro@4.1.1)
   lucide-react:
     specifier: ^0.299.0
     version: 0.299.0(react@18.2.0)
@@ -6811,8 +6811,8 @@ packages:
     dependencies:
       yallist: 4.0.0
 
-  /lucide-astro@0.299.0(astro@4.1.1):
-    resolution: {integrity: sha512-Q3drY0+u3bQxS1Xp0VMfTb4A4f16Wu+Ro1yhRNfJ8KeJhokG2SzSKMWQuXwLCodkS0hExstS/3Kw0Zwrc3YzFg==}
+  /lucide-astro@0.307.0(astro@4.1.1):
+    resolution: {integrity: sha512-0yq3BuLa61gp48o7afHJ0jsiA5rTjQdt+jj+U/O1vJAfE/EZUDiUgZ0/+TJWzoOeQd47As9LSCbHPpolwtfgmA==}
     peerDependencies:
       astro: '>=2.7.1'
     dependencies:
